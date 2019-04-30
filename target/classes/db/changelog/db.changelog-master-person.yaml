@@ -1,0 +1,17 @@
+databaseChangeLog:
+   - changeSet:
+      id: 4
+      author: vinay
+      changes:
+        - insert:
+            tableName: person
+            columns:
+              - column:
+                  name: first_name
+                  value: vinay5
+              - column:
+                  name: last_name
+                  value: gupta5
+              - column:
+                  name: city
+                  value: siwan

@@ -1,0 +1,2463 @@
+!SESSION 2018-12-26 12:55:46.104 -----------------------------------------------
+eclipse.buildId=4.0.2.201811300843-RELEASE
+java.version=1.8.0_192
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2018-12-26 12:56:13.305
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-12-26 12:56:13.305
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7d95166a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@18b3db6e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-12-26 12:56:17.802
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\wp040632'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.buildship.core 2 0 2018-12-26 12:56:18.181
+!MESSAGE Could not load Gradle version information
+!STACK 0
+org.gradle.api.UncheckedIOException: Cannot download published Gradle versions.
+	at com.gradleware.tooling.toolingutils.distribution.PublishedGradleVersions.downloadVersionInformation(PublishedGradleVersions.java:175)
+	at com.gradleware.tooling.toolingutils.distribution.PublishedGradleVersions.tryToDownloadAndCacheVersions(PublishedGradleVersions.java:159)
+	at com.gradleware.tooling.toolingutils.distribution.PublishedGradleVersions.create(PublishedGradleVersions.java:119)
+	at org.eclipse.buildship.core.util.gradle.PublishedGradleVersionsWrapper$LoadVersionsJob.run(PublishedGradleVersionsWrapper.java:66)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.ssl.Alerts.getSSLException(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.fatal(Unknown Source)
+	at sun.security.ssl.Handshaker.fatalSE(Unknown Source)
+	at sun.security.ssl.Handshaker.fatalSE(Unknown Source)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(Unknown Source)
+	at sun.security.ssl.ClientHandshaker.processMessage(Unknown Source)
+	at sun.security.ssl.Handshaker.processLoop(Unknown Source)
+	at sun.security.ssl.Handshaker.process_record(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.readRecord(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at sun.net.www.protocol.https.HttpsClient.afterConnect(Unknown Source)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at com.gradleware.tooling.toolingutils.distribution.PublishedGradleVersions.downloadVersionInformation(PublishedGradleVersions.java:172)
+	... 4 more
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(Unknown Source)
+	at sun.security.validator.PKIXValidator.engineValidate(Unknown Source)
+	at sun.security.validator.Validator.validate(Unknown Source)
+	at sun.security.ssl.X509TrustManagerImpl.validate(Unknown Source)
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(Unknown Source)
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(Unknown Source)
+	... 18 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(Unknown Source)
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(Unknown Source)
+	at java.security.cert.CertPathBuilder.build(Unknown Source)
+	... 24 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:34.289
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:34.289
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@46bff388[org.springframework.tooling.boot.ls:1.1.1.201811300741(id=533)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:34.290
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:34.341
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:42.988
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.cmGWOkOe
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:42.988
+!MESSAGE subscribing to classpath changes: sts4.classpath.cmGWOkOe
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:42.990
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:42.990
+!MESSAGE subsribers = [sts4.classpath.cmGWOkOe]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:42.991
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.eclipse.ui 4 0 2018-12-26 15:42:42.993
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.springframework.tooling.ls.eclipse.commons.ProjectSorter$1.run(ProjectSorter.java:39)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3933)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3564)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:42.993
+!MESSAGE project ics-adapter-integration-abl ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:42.994
+!MESSAGE project ics-adapter-integration-client ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:42.995
+!MESSAGE project ifast-cfg-adapter-app ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:42.996
+!MESSAGE project ifast-cfg-adapter-dc ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:42.997
+!MESSAGE project ifast-cfg-adapter-discovery ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:42.997
+!MESSAGE project ifast-cfg-adapter-discovery-mockserver ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:42.997
+!MESSAGE project ifast-cfg-adapter-integration-tests ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:42.997
+!MESSAGE Preparing classpath changed notification ics-adapter-integration-abl
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:42.998
+!MESSAGE project ifast-cfg-adapter-model ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:42.998
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:42.998
+!MESSAGE project ifast-cfg-adapter-rest ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:42.999
+!MESSAGE project ifast-cfg-adapter-services ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.002
+!MESSAGE project ifast-config-adapter ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.003
+!MESSAGE project ifast-config-adapter SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.003
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.003
+!MESSAGE classpath=40 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.004
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.cmGWOkOe => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.005
+!MESSAGE executing callback sts4.classpath.cmGWOkOe ics-adapter-integration-abl false 40
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.789
+!MESSAGE executing callback sts4.classpath.cmGWOkOe SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.789
+!MESSAGE Preparing classpath changed notification ifast-cfg-adapter-services
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.789
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.791
+!MESSAGE project entry /ifast-cfg-adapter-model
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.792
+!MESSAGE project entry /ics-adapter-integration-client
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.793
+!MESSAGE project entry /ics-adapter-integration-abl
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.794
+!MESSAGE project entry /ifast-cfg-adapter-discovery
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.812
+!MESSAGE classpath=116 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.812
+!MESSAGE executing callback sts4.classpath.cmGWOkOe ifast-cfg-adapter-services false 116
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.859
+!MESSAGE executing callback sts4.classpath.cmGWOkOe SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.860
+!MESSAGE Preparing classpath changed notification ifast-cfg-adapter-rest
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.860
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.862
+!MESSAGE project entry /ifast-cfg-adapter-services
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.862
+!MESSAGE project entry /ifast-cfg-adapter-model
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.863
+!MESSAGE project entry /ics-adapter-integration-client
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.863
+!MESSAGE project entry /ics-adapter-integration-abl
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.863
+!MESSAGE project entry /ifast-cfg-adapter-discovery
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.868
+!MESSAGE classpath=122 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.868
+!MESSAGE executing callback sts4.classpath.cmGWOkOe ifast-cfg-adapter-rest false 122
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.884
+!MESSAGE executing callback sts4.classpath.cmGWOkOe SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.885
+!MESSAGE Preparing classpath changed notification ifast-cfg-adapter-model
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.885
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.887
+!MESSAGE classpath=26 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.887
+!MESSAGE executing callback sts4.classpath.cmGWOkOe ifast-cfg-adapter-model false 26
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.892
+!MESSAGE executing callback sts4.classpath.cmGWOkOe SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.892
+!MESSAGE Preparing classpath changed notification ifast-cfg-adapter-integration-tests
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.892
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.894
+!MESSAGE project entry /ics-adapter-integration-client
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.895
+!MESSAGE project entry /ifast-cfg-adapter-model
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.896
+!MESSAGE project entry /ics-adapter-integration-abl
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.897
+!MESSAGE project entry /ifast-cfg-adapter-services
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.897
+!MESSAGE project entry /ifast-cfg-adapter-discovery
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.901
+!MESSAGE project entry /ifast-cfg-adapter-discovery-mockserver
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.902
+!MESSAGE classpath=118 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.902
+!MESSAGE executing callback sts4.classpath.cmGWOkOe ifast-cfg-adapter-integration-tests false 118
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.929
+!MESSAGE executing callback sts4.classpath.cmGWOkOe SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.929
+!MESSAGE Preparing classpath changed notification ifast-cfg-adapter-discovery-mockserver
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.929
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.934
+!MESSAGE classpath=57 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.935
+!MESSAGE executing callback sts4.classpath.cmGWOkOe ifast-cfg-adapter-discovery-mockserver false 57
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.951
+!MESSAGE executing callback sts4.classpath.cmGWOkOe SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.951
+!MESSAGE Preparing classpath changed notification ifast-cfg-adapter-discovery
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.951
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.953
+!MESSAGE project entry /ics-adapter-integration-client
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.954
+!MESSAGE project entry /ifast-cfg-adapter-model
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.954
+!MESSAGE project entry /ics-adapter-integration-abl
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.956
+!MESSAGE classpath=75 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.956
+!MESSAGE executing callback sts4.classpath.cmGWOkOe ifast-cfg-adapter-discovery false 75
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.965
+!MESSAGE executing callback sts4.classpath.cmGWOkOe SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.965
+!MESSAGE Preparing classpath changed notification ifast-cfg-adapter-dc
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.966
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.968
+!MESSAGE classpath=23 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.968
+!MESSAGE executing callback sts4.classpath.cmGWOkOe ifast-cfg-adapter-dc false 23
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.970
+!MESSAGE executing callback sts4.classpath.cmGWOkOe SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.971
+!MESSAGE Preparing classpath changed notification ifast-cfg-adapter-app
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.971
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.972
+!MESSAGE project entry /ifast-cfg-adapter-model
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.973
+!MESSAGE project entry /ics-adapter-integration-client
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.973
+!MESSAGE project entry /ics-adapter-integration-abl
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.974
+!MESSAGE project entry /ifast-cfg-adapter-rest
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.975
+!MESSAGE project entry /ifast-cfg-adapter-services
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.975
+!MESSAGE project entry /ifast-cfg-adapter-discovery
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.986
+!MESSAGE classpath=142 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:43.987
+!MESSAGE executing callback sts4.classpath.cmGWOkOe ifast-cfg-adapter-app false 142
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:44.011
+!MESSAGE executing callback sts4.classpath.cmGWOkOe SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:44.012
+!MESSAGE Preparing classpath changed notification ics-adapter-integration-client
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:44.012
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:44.014
+!MESSAGE project entry /ifast-cfg-adapter-model
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:44.014
+!MESSAGE project entry /ics-adapter-integration-abl
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:44.015
+!MESSAGE classpath=60 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:44.016
+!MESSAGE executing callback sts4.classpath.cmGWOkOe ics-adapter-integration-client false 60
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-12-26 15:42:44.024
+!MESSAGE executing callback sts4.classpath.cmGWOkOe SUCCESS [done]
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-01-02 16:25:15.509
+!MESSAGE File not found: D:\ifdscode\ifast-config-adapter\ics-adapter-integration-abl\target\generated-sources\proxygen\com\ifdsgroup\config\ifastintegration\IFastIntegration.java.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/ics-adapter-integration-abl/target/generated-sources/proxygen/com/ifdsgroup/config/ifastintegration/IFastIntegration.java)[368]: java.lang.Exception: File not found: D:\ifdscode\ifast-config-adapter\ics-adapter-integration-abl\target\generated-sources\proxygen\com\ifdsgroup\config\ifastintegration\IFastIntegration.java.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:833)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:280)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:271)
+	at org.eclipse.lsp4e.LSPEclipseUtils.getFileContentTypes(LSPEclipseUtils.java:733)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:289)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSPDocumentInfosFor(LanguageServiceAccessor.java:444)
+	at org.springframework.tooling.ls.eclipse.commons.Utils.isProperDocumentIdFor(Utils.java:63)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.updateSourceViewer(STS4LanguageClientImpl.java:142)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.runInUIThread(STS4LanguageClientImpl.java:128)
+	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:98)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3933)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3564)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2019-01-02 16:25:15.510
+!MESSAGE File not found: D:\ifdscode\ifast-config-adapter\ics-adapter-integration-abl\target\generated-sources\proxygen\com\ifdsgroup\config\ifastintegration\IFastIntegration.java.
+!STACK 0
+java.lang.Exception: File not found: D:\ifdscode\ifast-config-adapter\ics-adapter-integration-abl\target\generated-sources\proxygen\com\ifdsgroup\config\ifastintegration\IFastIntegration.java.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:833)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:280)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:271)
+	at org.eclipse.lsp4e.LSPEclipseUtils.getFileContentTypes(LSPEclipseUtils.java:733)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:289)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSPDocumentInfosFor(LanguageServiceAccessor.java:444)
+	at org.springframework.tooling.ls.eclipse.commons.Utils.isProperDocumentIdFor(Utils.java:63)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.updateSourceViewer(STS4LanguageClientImpl.java:142)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.runInUIThread(STS4LanguageClientImpl.java:128)
+	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:98)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3933)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3564)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-01-02 16:25:15.526
+!MESSAGE File not found: D:\ifdscode\ifast-config-adapter\ics-adapter-integration-abl\target\generated-sources\proxygen\com\ifdsgroup\config\ifastintegration\IFastIntegration.java.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/ics-adapter-integration-abl/target/generated-sources/proxygen/com/ifdsgroup/config/ifastintegration/IFastIntegration.java)[368]: java.lang.Exception: File not found: D:\ifdscode\ifast-config-adapter\ics-adapter-integration-abl\target\generated-sources\proxygen\com\ifdsgroup\config\ifastintegration\IFastIntegration.java.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:833)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:280)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:271)
+	at org.eclipse.lsp4e.LSPEclipseUtils.getFileContentTypes(LSPEclipseUtils.java:733)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:289)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSPDocumentInfosFor(LanguageServiceAccessor.java:444)
+	at org.eclipse.lsp4e.operations.codelens.CodeLensProvider.lambda$0(CodeLensProvider.java:35)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2019-01-02 16:25:15.526
+!MESSAGE File not found: D:\ifdscode\ifast-config-adapter\ics-adapter-integration-abl\target\generated-sources\proxygen\com\ifdsgroup\config\ifastintegration\IFastIntegration.java.
+!STACK 0
+java.lang.Exception: File not found: D:\ifdscode\ifast-config-adapter\ics-adapter-integration-abl\target\generated-sources\proxygen\com\ifdsgroup\config\ifastintegration\IFastIntegration.java.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:833)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:280)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:271)
+	at org.eclipse.lsp4e.LSPEclipseUtils.getFileContentTypes(LSPEclipseUtils.java:733)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:289)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSPDocumentInfosFor(LanguageServiceAccessor.java:444)
+	at org.eclipse.lsp4e.operations.codelens.CodeLensProvider.lambda$0(CodeLensProvider.java:35)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-01-02 16:25:15.538
+!MESSAGE File not found: D:\ifdscode\ifast-config-adapter\ics-adapter-integration-abl\target\generated-sources\proxygen\com\ifdsgroup\config\ifastintegration\IFastIntegration.java.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/ics-adapter-integration-abl/target/generated-sources/proxygen/com/ifdsgroup/config/ifastintegration/IFastIntegration.java)[368]: java.lang.Exception: File not found: D:\ifdscode\ifast-config-adapter\ics-adapter-integration-abl\target\generated-sources\proxygen\com\ifdsgroup\config\ifastintegration\IFastIntegration.java.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:833)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:280)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:271)
+	at org.eclipse.lsp4e.LSPEclipseUtils.getFileContentTypes(LSPEclipseUtils.java:733)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:289)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSPDocumentInfosFor(LanguageServiceAccessor.java:444)
+	at org.eclipse.lsp4e.operations.color.DocumentColorProvider.lambda$0(DocumentColorProvider.java:53)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2019-01-02 16:25:15.538
+!MESSAGE File not found: D:\ifdscode\ifast-config-adapter\ics-adapter-integration-abl\target\generated-sources\proxygen\com\ifdsgroup\config\ifastintegration\IFastIntegration.java.
+!STACK 0
+java.lang.Exception: File not found: D:\ifdscode\ifast-config-adapter\ics-adapter-integration-abl\target\generated-sources\proxygen\com\ifdsgroup\config\ifastintegration\IFastIntegration.java.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:833)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:280)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:271)
+	at org.eclipse.lsp4e.LSPEclipseUtils.getFileContentTypes(LSPEclipseUtils.java:733)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:289)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSPDocumentInfosFor(LanguageServiceAccessor.java:444)
+	at org.eclipse.lsp4e.operations.color.DocumentColorProvider.lambda$0(DocumentColorProvider.java:53)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-01-02 16:25:15.582
+!MESSAGE File not found: D:\ifdscode\ifast-config-adapter\ics-adapter-integration-abl\target\generated-sources\proxygen\com\ifdsgroup\config\ifastintegration\IFastIntegration.java.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/ics-adapter-integration-abl/target/generated-sources/proxygen/com/ifdsgroup/config/ifastintegration/IFastIntegration.java)[368]: java.lang.Exception: File not found: D:\ifdscode\ifast-config-adapter\ics-adapter-integration-abl\target\generated-sources\proxygen\com\ifdsgroup\config\ifastintegration\IFastIntegration.java.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:833)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:280)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:271)
+	at org.eclipse.lsp4e.LSPEclipseUtils.getFileContentTypes(LSPEclipseUtils.java:733)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:289)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSPDocumentInfosFor(LanguageServiceAccessor.java:444)
+	at org.springframework.tooling.ls.eclipse.commons.Utils.isProperDocumentIdFor(Utils.java:63)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.updateSourceViewer(STS4LanguageClientImpl.java:142)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.runInUIThread(STS4LanguageClientImpl.java:128)
+	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:98)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3933)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3564)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2019-01-02 16:25:15.582
+!MESSAGE File not found: D:\ifdscode\ifast-config-adapter\ics-adapter-integration-abl\target\generated-sources\proxygen\com\ifdsgroup\config\ifastintegration\IFastIntegration.java.
+!STACK 0
+java.lang.Exception: File not found: D:\ifdscode\ifast-config-adapter\ics-adapter-integration-abl\target\generated-sources\proxygen\com\ifdsgroup\config\ifastintegration\IFastIntegration.java.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:833)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:280)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:271)
+	at org.eclipse.lsp4e.LSPEclipseUtils.getFileContentTypes(LSPEclipseUtils.java:733)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:289)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSPDocumentInfosFor(LanguageServiceAccessor.java:444)
+	at org.springframework.tooling.ls.eclipse.commons.Utils.isProperDocumentIdFor(Utils.java:63)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.updateSourceViewer(STS4LanguageClientImpl.java:142)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.runInUIThread(STS4LanguageClientImpl.java:128)
+	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:98)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3933)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3564)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-01-02 16:25:15.587
+!MESSAGE File not found: D:\ifdscode\ifast-config-adapter\ics-adapter-integration-abl\target\generated-sources\proxygen\com\ifdsgroup\config\ifastintegration\IFastIntegration.java.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/ics-adapter-integration-abl/target/generated-sources/proxygen/com/ifdsgroup/config/ifastintegration/IFastIntegration.java)[368]: java.lang.Exception: File not found: D:\ifdscode\ifast-config-adapter\ics-adapter-integration-abl\target\generated-sources\proxygen\com\ifdsgroup\config\ifastintegration\IFastIntegration.java.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:833)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:280)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:271)
+	at org.eclipse.lsp4e.LSPEclipseUtils.getFileContentTypes(LSPEclipseUtils.java:733)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:289)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSPDocumentInfosFor(LanguageServiceAccessor.java:444)
+	at org.springframework.tooling.ls.eclipse.commons.Utils.isProperDocumentIdFor(Utils.java:63)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.updateSourceViewer(STS4LanguageClientImpl.java:142)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.runInUIThread(STS4LanguageClientImpl.java:128)
+	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:98)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3933)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3564)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2019-01-02 16:25:15.590
+!MESSAGE File not found: D:\ifdscode\ifast-config-adapter\ics-adapter-integration-abl\target\generated-sources\proxygen\com\ifdsgroup\config\ifastintegration\IFastIntegration.java.
+!STACK 0
+java.lang.Exception: File not found: D:\ifdscode\ifast-config-adapter\ics-adapter-integration-abl\target\generated-sources\proxygen\com\ifdsgroup\config\ifastintegration\IFastIntegration.java.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:833)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:280)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:271)
+	at org.eclipse.lsp4e.LSPEclipseUtils.getFileContentTypes(LSPEclipseUtils.java:733)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:289)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSPDocumentInfosFor(LanguageServiceAccessor.java:444)
+	at org.springframework.tooling.ls.eclipse.commons.Utils.isProperDocumentIdFor(Utils.java:63)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.updateSourceViewer(STS4LanguageClientImpl.java:142)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.runInUIThread(STS4LanguageClientImpl.java:128)
+	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:98)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3933)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3564)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-01-02 16:25:15.595
+!MESSAGE File not found: D:\ifdscode\ifast-config-adapter\ics-adapter-integration-abl\target\generated-sources\proxygen\com\ifdsgroup\config\ifastintegration\IFastIntegration.java.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/ics-adapter-integration-abl/target/generated-sources/proxygen/com/ifdsgroup/config/ifastintegration/IFastIntegration.java)[368]: java.lang.Exception: File not found: D:\ifdscode\ifast-config-adapter\ics-adapter-integration-abl\target\generated-sources\proxygen\com\ifdsgroup\config\ifastintegration\IFastIntegration.java.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:833)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:280)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:271)
+	at org.eclipse.lsp4e.LSPEclipseUtils.getFileContentTypes(LSPEclipseUtils.java:733)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:289)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSPDocumentInfosFor(LanguageServiceAccessor.java:444)
+	at org.springframework.tooling.ls.eclipse.commons.Utils.isProperDocumentIdFor(Utils.java:63)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.updateSourceViewer(STS4LanguageClientImpl.java:142)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.runInUIThread(STS4LanguageClientImpl.java:128)
+	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:98)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3933)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3564)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2019-01-02 16:25:15.595
+!MESSAGE File not found: D:\ifdscode\ifast-config-adapter\ics-adapter-integration-abl\target\generated-sources\proxygen\com\ifdsgroup\config\ifastintegration\IFastIntegration.java.
+!STACK 0
+java.lang.Exception: File not found: D:\ifdscode\ifast-config-adapter\ics-adapter-integration-abl\target\generated-sources\proxygen\com\ifdsgroup\config\ifastintegration\IFastIntegration.java.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:833)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:280)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:271)
+	at org.eclipse.lsp4e.LSPEclipseUtils.getFileContentTypes(LSPEclipseUtils.java:733)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:289)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSPDocumentInfosFor(LanguageServiceAccessor.java:444)
+	at org.springframework.tooling.ls.eclipse.commons.Utils.isProperDocumentIdFor(Utils.java:63)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.updateSourceViewer(STS4LanguageClientImpl.java:142)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.runInUIThread(STS4LanguageClientImpl.java:128)
+	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:98)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3933)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3564)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-01-02 16:25:15.600
+!MESSAGE File not found: D:\ifdscode\ifast-config-adapter\ics-adapter-integration-abl\target\generated-sources\proxygen\com\ifdsgroup\config\ifastintegration\IFastIntegration.java.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/ics-adapter-integration-abl/target/generated-sources/proxygen/com/ifdsgroup/config/ifastintegration/IFastIntegration.java)[368]: java.lang.Exception: File not found: D:\ifdscode\ifast-config-adapter\ics-adapter-integration-abl\target\generated-sources\proxygen\com\ifdsgroup\config\ifastintegration\IFastIntegration.java.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:833)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:280)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:271)
+	at org.eclipse.lsp4e.LSPEclipseUtils.getFileContentTypes(LSPEclipseUtils.java:733)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:289)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSPDocumentInfosFor(LanguageServiceAccessor.java:444)
+	at org.springframework.tooling.ls.eclipse.commons.Utils.isProperDocumentIdFor(Utils.java:63)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.updateSourceViewer(STS4LanguageClientImpl.java:142)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.runInUIThread(STS4LanguageClientImpl.java:128)
+	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:98)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3933)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3564)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2019-01-02 16:25:15.600
+!MESSAGE File not found: D:\ifdscode\ifast-config-adapter\ics-adapter-integration-abl\target\generated-sources\proxygen\com\ifdsgroup\config\ifastintegration\IFastIntegration.java.
+!STACK 0
+java.lang.Exception: File not found: D:\ifdscode\ifast-config-adapter\ics-adapter-integration-abl\target\generated-sources\proxygen\com\ifdsgroup\config\ifastintegration\IFastIntegration.java.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:833)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:280)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:271)
+	at org.eclipse.lsp4e.LSPEclipseUtils.getFileContentTypes(LSPEclipseUtils.java:733)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:289)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSPDocumentInfosFor(LanguageServiceAccessor.java:444)
+	at org.springframework.tooling.ls.eclipse.commons.Utils.isProperDocumentIdFor(Utils.java:63)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.updateSourceViewer(STS4LanguageClientImpl.java:142)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.runInUIThread(STS4LanguageClientImpl.java:128)
+	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:98)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3933)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3564)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-01-02 16:25:15.610
+!MESSAGE File not found: D:\ifdscode\ifast-config-adapter\ics-adapter-integration-abl\target\generated-sources\proxygen\com\ifdsgroup\config\ifastintegration\IFastIntegration.java.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/ics-adapter-integration-abl/target/generated-sources/proxygen/com/ifdsgroup/config/ifastintegration/IFastIntegration.java)[368]: java.lang.Exception: File not found: D:\ifdscode\ifast-config-adapter\ics-adapter-integration-abl\target\generated-sources\proxygen\com\ifdsgroup\config\ifastintegration\IFastIntegration.java.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:833)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:280)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:271)
+	at org.eclipse.lsp4e.LSPEclipseUtils.getFileContentTypes(LSPEclipseUtils.java:733)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:289)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSPDocumentInfosFor(LanguageServiceAccessor.java:444)
+	at org.springframework.tooling.ls.eclipse.commons.Utils.isProperDocumentIdFor(Utils.java:63)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.updateSourceViewer(STS4LanguageClientImpl.java:142)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.runInUIThread(STS4LanguageClientImpl.java:128)
+	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:98)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3933)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3564)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2019-01-02 16:25:15.610
+!MESSAGE File not found: D:\ifdscode\ifast-config-adapter\ics-adapter-integration-abl\target\generated-sources\proxygen\com\ifdsgroup\config\ifastintegration\IFastIntegration.java.
+!STACK 0
+java.lang.Exception: File not found: D:\ifdscode\ifast-config-adapter\ics-adapter-integration-abl\target\generated-sources\proxygen\com\ifdsgroup\config\ifastintegration\IFastIntegration.java.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:833)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:280)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:271)
+	at org.eclipse.lsp4e.LSPEclipseUtils.getFileContentTypes(LSPEclipseUtils.java:733)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:289)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSPDocumentInfosFor(LanguageServiceAccessor.java:444)
+	at org.springframework.tooling.ls.eclipse.commons.Utils.isProperDocumentIdFor(Utils.java:63)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.updateSourceViewer(STS4LanguageClientImpl.java:142)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.runInUIThread(STS4LanguageClientImpl.java:128)
+	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:98)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3933)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3564)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-01-02 16:25:15.615
+!MESSAGE File not found: D:\ifdscode\ifast-config-adapter\ics-adapter-integration-abl\target\generated-sources\proxygen\com\ifdsgroup\config\ifastintegration\IFastIntegration.java.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/ics-adapter-integration-abl/target/generated-sources/proxygen/com/ifdsgroup/config/ifastintegration/IFastIntegration.java)[368]: java.lang.Exception: File not found: D:\ifdscode\ifast-config-adapter\ics-adapter-integration-abl\target\generated-sources\proxygen\com\ifdsgroup\config\ifastintegration\IFastIntegration.java.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:833)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:280)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:271)
+	at org.eclipse.lsp4e.LSPEclipseUtils.getFileContentTypes(LSPEclipseUtils.java:733)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:289)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSPDocumentInfosFor(LanguageServiceAccessor.java:444)
+	at org.springframework.tooling.ls.eclipse.commons.Utils.isProperDocumentIdFor(Utils.java:63)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.updateSourceViewer(STS4LanguageClientImpl.java:142)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.runInUIThread(STS4LanguageClientImpl.java:128)
+	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:98)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3933)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3564)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2019-01-02 16:25:15.616
+!MESSAGE File not found: D:\ifdscode\ifast-config-adapter\ics-adapter-integration-abl\target\generated-sources\proxygen\com\ifdsgroup\config\ifastintegration\IFastIntegration.java.
+!STACK 0
+java.lang.Exception: File not found: D:\ifdscode\ifast-config-adapter\ics-adapter-integration-abl\target\generated-sources\proxygen\com\ifdsgroup\config\ifastintegration\IFastIntegration.java.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:833)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:280)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:271)
+	at org.eclipse.lsp4e.LSPEclipseUtils.getFileContentTypes(LSPEclipseUtils.java:733)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:289)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSPDocumentInfosFor(LanguageServiceAccessor.java:444)
+	at org.springframework.tooling.ls.eclipse.commons.Utils.isProperDocumentIdFor(Utils.java:63)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.updateSourceViewer(STS4LanguageClientImpl.java:142)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.runInUIThread(STS4LanguageClientImpl.java:128)
+	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:98)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3933)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3564)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-01-02 16:25:15.621
+!MESSAGE File not found: D:\ifdscode\ifast-config-adapter\ics-adapter-integration-abl\target\generated-sources\proxygen\com\ifdsgroup\config\ifastintegration\IFastIntegration.java.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/ics-adapter-integration-abl/target/generated-sources/proxygen/com/ifdsgroup/config/ifastintegration/IFastIntegration.java)[368]: java.lang.Exception: File not found: D:\ifdscode\ifast-config-adapter\ics-adapter-integration-abl\target\generated-sources\proxygen\com\ifdsgroup\config\ifastintegration\IFastIntegration.java.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:833)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:280)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:271)
+	at org.eclipse.lsp4e.LSPEclipseUtils.getFileContentTypes(LSPEclipseUtils.java:733)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:289)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSPDocumentInfosFor(LanguageServiceAccessor.java:444)
+	at org.springframework.tooling.ls.eclipse.commons.Utils.isProperDocumentIdFor(Utils.java:63)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.updateSourceViewer(STS4LanguageClientImpl.java:142)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.runInUIThread(STS4LanguageClientImpl.java:128)
+	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:98)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3933)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3564)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2019-01-02 16:25:15.622
+!MESSAGE File not found: D:\ifdscode\ifast-config-adapter\ics-adapter-integration-abl\target\generated-sources\proxygen\com\ifdsgroup\config\ifastintegration\IFastIntegration.java.
+!STACK 0
+java.lang.Exception: File not found: D:\ifdscode\ifast-config-adapter\ics-adapter-integration-abl\target\generated-sources\proxygen\com\ifdsgroup\config\ifastintegration\IFastIntegration.java.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:833)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:280)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:271)
+	at org.eclipse.lsp4e.LSPEclipseUtils.getFileContentTypes(LSPEclipseUtils.java:733)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:289)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSPDocumentInfosFor(LanguageServiceAccessor.java:444)
+	at org.springframework.tooling.ls.eclipse.commons.Utils.isProperDocumentIdFor(Utils.java:63)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.updateSourceViewer(STS4LanguageClientImpl.java:142)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.runInUIThread(STS4LanguageClientImpl.java:128)
+	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:98)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3933)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3564)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.eclipse.ui 4 0 2019-01-07 11:34:37.860
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Graphic is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4595)
+	at org.eclipse.swt.SWT.error(SWT.java:4510)
+	at org.eclipse.swt.SWT.error(SWT.java:4481)
+	at org.eclipse.swt.graphics.Font.getFontData(Font.java:195)
+	at org.eclipse.swt.custom.CTabFolderRenderer.drawChevron(CTabFolderRenderer.java:912)
+	at org.eclipse.swt.custom.CTabFolderRenderer.draw(CTabFolderRenderer.java:608)
+	at org.eclipse.e4.ui.workbench.renderers.swt.CTabRendering.draw(CTabRendering.java:254)
+	at org.eclipse.swt.custom.CTabFolder.createButtonImage(CTabFolder.java:738)
+	at org.eclipse.swt.custom.CTabFolder.setButtonBounds(CTabFolder.java:2572)
+	at org.eclipse.swt.custom.CTabFolder.updateItems(CTabFolder.java:3798)
+	at org.eclipse.swt.custom.CTabFolder.updateItems(CTabFolder.java:3729)
+	at org.eclipse.swt.custom.CTabFolder.onResize(CTabFolder.java:2121)
+	at org.eclipse.swt.custom.CTabFolder.lambda$0(CTabFolder.java:338)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4145)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1060)
+	at org.eclipse.swt.widgets.Control.sendResize(Control.java:3066)
+	at org.eclipse.swt.widgets.Composite.sendResize(Composite.java:1036)
+	at org.eclipse.swt.widgets.Composite.setBoundsInPixels(Composite.java:1086)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3235)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3231)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3226)
+	at org.eclipse.swt.layout.FillLayout.layout(FillLayout.java:207)
+	at org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1362)
+	at org.eclipse.swt.widgets.Composite.sendResize(Composite.java:1040)
+	at org.eclipse.swt.widgets.Composite.setBoundsInPixels(Composite.java:1086)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3235)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3231)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3226)
+	at org.eclipse.swt.layout.FillLayout.layout(FillLayout.java:207)
+	at org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1362)
+	at org.eclipse.swt.widgets.Composite.sendResize(Composite.java:1040)
+	at org.eclipse.swt.widgets.Composite.setBoundsInPixels(Composite.java:1086)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3235)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3231)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3307)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3303)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.setRectangle(SashLayout.java:286)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.tileSubNodes(SashLayout.java:231)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.tileSubNodes(SashLayout.java:274)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.tileSubNodes(SashLayout.java:274)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.tileSubNodes(SashLayout.java:274)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.layout(SashLayout.java:148)
+	at org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1362)
+	at org.eclipse.swt.widgets.Composite.sendResize(Composite.java:1040)
+	at org.eclipse.swt.widgets.Composite.setBoundsInPixels(Composite.java:1086)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3235)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3231)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3226)
+	at org.eclipse.swt.layout.FillLayout.layout(FillLayout.java:207)
+	at org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1362)
+	at org.eclipse.swt.widgets.Composite.WM_SIZE(Composite.java:1764)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4843)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4784)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2304)
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:91)
+	at org.eclipse.swt.widgets.Control.WM_WINDOWPOSCHANGED(Control.java:5687)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4856)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4784)
+	at org.eclipse.swt.internal.win32.OS.SetWindowPos(Native Method)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3274)
+	at org.eclipse.swt.widgets.Composite.setBoundsInPixels(Composite.java:1080)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3235)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3231)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3307)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3303)
+	at org.eclipse.swt.custom.StackLayout.layout(StackLayout.java:126)
+	at org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1362)
+	at org.eclipse.swt.widgets.Composite.WM_SIZE(Composite.java:1764)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4843)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4784)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2304)
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:91)
+	at org.eclipse.swt.widgets.Control.WM_WINDOWPOSCHANGED(Control.java:5687)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4856)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4784)
+	at org.eclipse.swt.internal.win32.OS.SetWindowPos(Native Method)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3274)
+	at org.eclipse.swt.widgets.Composite.setBoundsInPixels(Composite.java:1080)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3235)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3231)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3307)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3303)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.setRectangle(SashLayout.java:286)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.tileSubNodes(SashLayout.java:231)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.tileSubNodes(SashLayout.java:274)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.layout(SashLayout.java:148)
+	at org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1362)
+	at org.eclipse.swt.widgets.Composite.WM_SIZE(Composite.java:1764)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4843)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4784)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2304)
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:91)
+	at org.eclipse.swt.widgets.Control.WM_WINDOWPOSCHANGED(Control.java:5687)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4856)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4784)
+	at org.eclipse.swt.internal.win32.OS.SetWindowPos(Native Method)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3274)
+	at org.eclipse.swt.widgets.Composite.setBoundsInPixels(Composite.java:1080)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3235)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3231)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3226)
+	at org.eclipse.swt.layout.FillLayout.layout(FillLayout.java:207)
+	at org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1362)
+	at org.eclipse.swt.widgets.Composite.WM_SIZE(Composite.java:1764)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4843)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4784)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2304)
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:91)
+	at org.eclipse.swt.widgets.Control.WM_WINDOWPOSCHANGED(Control.java:5687)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4856)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4792)
+	at org.eclipse.swt.internal.win32.OS.EndDeferWindowPos(Native Method)
+	at org.eclipse.swt.widgets.Composite.resizeChildren(Composite.java:1010)
+	at org.eclipse.swt.widgets.Composite.resizeChildren(Composite.java:976)
+	at org.eclipse.swt.widgets.Composite.setResizeChildren(Composite.java:1188)
+	at org.eclipse.swt.widgets.Composite.WM_SIZE(Composite.java:1768)
+	at org.eclipse.swt.widgets.Canvas.WM_SIZE(Canvas.java:452)
+	at org.eclipse.swt.widgets.Decorations.WM_SIZE(Decorations.java:1668)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4843)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:348)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1502)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2162)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4792)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2304)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.WM_WINDOWPOSCHANGED(Control.java:5687)
+	at org.eclipse.swt.widgets.Canvas.WM_WINDOWPOSCHANGED(Canvas.java:459)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4856)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:348)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1502)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2162)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4784)
+	at org.eclipse.swt.internal.win32.OS.SetMenu(Native Method)
+	at org.eclipse.swt.widgets.Decorations.setMenuBar(Decorations.java:1059)
+	at org.eclipse.swt.widgets.Menu.releaseParent(Menu.java:943)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:820)
+	at org.eclipse.swt.widgets.Widget.dispose(Widget.java:429)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.disposeWidget(SWTPartRenderer.java:175)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:958)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:886)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:881)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:865)
+	at org.eclipse.ui.internal.WorkbenchWindow$1.handleEvent(WorkbenchWindow.java:334)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:147)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4594)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:215)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:204)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:199)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:138)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:81)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:42)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setWidget(UIElementImpl.java:265)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.unbindWidget(SWTPartRenderer.java:150)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.lambda$0(SWTPartRenderer.java:139)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:127)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4145)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1060)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:812)
+	at org.eclipse.swt.widgets.Widget.dispose(Widget.java:429)
+	at org.eclipse.swt.widgets.Decorations.dispose(Decorations.java:408)
+	at org.eclipse.swt.widgets.Shell.dispose(Shell.java:732)
+	at org.eclipse.swt.widgets.Display.release(Display.java:3612)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:300)
+	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3143)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2304)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4867)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:348)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1502)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2162)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4792)
+	at org.eclipse.swt.internal.win32.OS.PeekMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.PeekMessage(OS.java:2793)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3556)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:821)
+	at org.eclipse.jface.window.Window.open(Window.java:797)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchWindowAdvisor.promptOnExit(IDEWorkbenchWindowAdvisor.java:227)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$1.handleEvent(IDEWorkbenchAdvisor.java:167)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4145)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4137)
+	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3156)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2304)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4867)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:348)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1502)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2162)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4792)
+	at org.eclipse.swt.internal.win32.OS.PeekMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.PeekMessage(OS.java:2793)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3556)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.eclipse.ui 4 0 2019-01-07 11:34:37.901
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalArgumentException: Argument not valid
+	at org.eclipse.swt.SWT.error(SWT.java:4576)
+	at org.eclipse.swt.SWT.error(SWT.java:4510)
+	at org.eclipse.swt.SWT.error(SWT.java:4481)
+	at org.eclipse.swt.graphics.GC.setFont(GC.java:4350)
+	at org.eclipse.swt.custom.CTabFolderRenderer.computeSize(CTabFolderRenderer.java:343)
+	at org.eclipse.e4.ui.workbench.renderers.swt.CTabRendering.computeSize(CTabRendering.java:201)
+	at org.eclipse.swt.custom.CTabFolder.setItemSize(CTabFolder.java:2850)
+	at org.eclipse.swt.custom.CTabFolder.updateItems(CTabFolder.java:3796)
+	at org.eclipse.swt.custom.CTabFolder.updateItems(CTabFolder.java:3729)
+	at org.eclipse.swt.custom.CTabFolder.onResize(CTabFolder.java:2121)
+	at org.eclipse.swt.custom.CTabFolder.lambda$0(CTabFolder.java:338)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4145)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1060)
+	at org.eclipse.swt.widgets.Control.sendResize(Control.java:3066)
+	at org.eclipse.swt.widgets.Composite.sendResize(Composite.java:1036)
+	at org.eclipse.swt.widgets.Composite.setBoundsInPixels(Composite.java:1086)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3235)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3231)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3307)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3303)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.setRectangle(SashLayout.java:286)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.tileSubNodes(SashLayout.java:231)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.tileSubNodes(SashLayout.java:274)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.tileSubNodes(SashLayout.java:274)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.layout(SashLayout.java:148)
+	at org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1362)
+	at org.eclipse.swt.widgets.Composite.sendResize(Composite.java:1040)
+	at org.eclipse.swt.widgets.Composite.setBoundsInPixels(Composite.java:1086)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3235)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3231)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3226)
+	at org.eclipse.swt.layout.FillLayout.layout(FillLayout.java:207)
+	at org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1362)
+	at org.eclipse.swt.widgets.Composite.WM_SIZE(Composite.java:1764)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4843)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4784)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2304)
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:91)
+	at org.eclipse.swt.widgets.Control.WM_WINDOWPOSCHANGED(Control.java:5687)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4856)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4784)
+	at org.eclipse.swt.internal.win32.OS.SetWindowPos(Native Method)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3274)
+	at org.eclipse.swt.widgets.Composite.setBoundsInPixels(Composite.java:1080)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3235)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3231)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3307)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3303)
+	at org.eclipse.swt.custom.StackLayout.layout(StackLayout.java:126)
+	at org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1362)
+	at org.eclipse.swt.widgets.Composite.WM_SIZE(Composite.java:1764)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4843)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4784)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2304)
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:91)
+	at org.eclipse.swt.widgets.Control.WM_WINDOWPOSCHANGED(Control.java:5687)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4856)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4784)
+	at org.eclipse.swt.internal.win32.OS.SetWindowPos(Native Method)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3274)
+	at org.eclipse.swt.widgets.Composite.setBoundsInPixels(Composite.java:1080)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3235)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3231)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3307)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3303)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.setRectangle(SashLayout.java:286)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.tileSubNodes(SashLayout.java:231)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.tileSubNodes(SashLayout.java:274)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashLayout.layout(SashLayout.java:148)
+	at org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1362)
+	at org.eclipse.swt.widgets.Composite.WM_SIZE(Composite.java:1764)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4843)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4784)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2304)
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:91)
+	at org.eclipse.swt.widgets.Control.WM_WINDOWPOSCHANGED(Control.java:5687)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4856)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4784)
+	at org.eclipse.swt.internal.win32.OS.SetWindowPos(Native Method)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3274)
+	at org.eclipse.swt.widgets.Composite.setBoundsInPixels(Composite.java:1080)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3235)
+	at org.eclipse.swt.widgets.Control.setBoundsInPixels(Control.java:3231)
+	at org.eclipse.swt.widgets.Control.setBounds(Control.java:3226)
+	at org.eclipse.swt.layout.FillLayout.layout(FillLayout.java:207)
+	at org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1362)
+	at org.eclipse.swt.widgets.Composite.WM_SIZE(Composite.java:1764)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4843)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4784)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2304)
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:91)
+	at org.eclipse.swt.widgets.Control.WM_WINDOWPOSCHANGED(Control.java:5687)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4856)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4792)
+	at org.eclipse.swt.internal.win32.OS.EndDeferWindowPos(Native Method)
+	at org.eclipse.swt.widgets.Composite.resizeChildren(Composite.java:1010)
+	at org.eclipse.swt.widgets.Composite.resizeChildren(Composite.java:976)
+	at org.eclipse.swt.widgets.Composite.setResizeChildren(Composite.java:1188)
+	at org.eclipse.swt.widgets.Composite.WM_SIZE(Composite.java:1768)
+	at org.eclipse.swt.widgets.Canvas.WM_SIZE(Canvas.java:452)
+	at org.eclipse.swt.widgets.Decorations.WM_SIZE(Decorations.java:1668)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4843)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:348)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1502)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2162)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4792)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2304)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.WM_WINDOWPOSCHANGED(Control.java:5687)
+	at org.eclipse.swt.widgets.Canvas.WM_WINDOWPOSCHANGED(Canvas.java:459)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4856)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:348)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1502)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2162)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4784)
+	at org.eclipse.swt.internal.win32.OS.SetMenu(Native Method)
+	at org.eclipse.swt.widgets.Decorations.setMenuBar(Decorations.java:1059)
+	at org.eclipse.swt.widgets.Menu.releaseParent(Menu.java:943)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:820)
+	at org.eclipse.swt.widgets.Widget.dispose(Widget.java:429)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.disposeWidget(SWTPartRenderer.java:175)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:958)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:886)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:881)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:865)
+	at org.eclipse.ui.internal.WorkbenchWindow$1.handleEvent(WorkbenchWindow.java:334)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:147)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4594)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:215)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:204)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:199)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:138)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:81)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:42)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setWidget(UIElementImpl.java:265)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.unbindWidget(SWTPartRenderer.java:150)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.lambda$0(SWTPartRenderer.java:139)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:127)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4145)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1060)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:812)
+	at org.eclipse.swt.widgets.Widget.dispose(Widget.java:429)
+	at org.eclipse.swt.widgets.Decorations.dispose(Decorations.java:408)
+	at org.eclipse.swt.widgets.Shell.dispose(Shell.java:732)
+	at org.eclipse.swt.widgets.Display.release(Display.java:3612)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:300)
+	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3143)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2304)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4867)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:348)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1502)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2162)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4792)
+	at org.eclipse.swt.internal.win32.OS.PeekMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.PeekMessage(OS.java:2793)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3556)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:821)
+	at org.eclipse.jface.window.Window.open(Window.java:797)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchWindowAdvisor.promptOnExit(IDEWorkbenchWindowAdvisor.java:227)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$1.handleEvent(IDEWorkbenchAdvisor.java:167)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4145)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4137)
+	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3156)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2304)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4867)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:348)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1502)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2162)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4792)
+	at org.eclipse.swt.internal.win32.OS.PeekMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.PeekMessage(OS.java:2793)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3556)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.eclipse.ui 4 0 2019-01-07 11:34:37.938
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.ui.internal.NavigationHistory.getDisplay(NavigationHistory.java:179)
+	at org.eclipse.ui.internal.NavigationHistory.markEditor(NavigationHistory.java:196)
+	at org.eclipse.ui.internal.WorkbenchPage.updateActiveEditorSources(WorkbenchPage.java:433)
+	at org.eclipse.ui.internal.WorkbenchPage.firePartClosed(WorkbenchPage.java:5270)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.lambda$0(CompatibilityPart.java:109)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:147)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4594)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:215)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:204)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:199)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:138)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:81)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:42)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setWidget(UIElementImpl.java:265)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.unbindWidget(SWTPartRenderer.java:150)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.lambda$0(SWTPartRenderer.java:139)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:127)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4145)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1060)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:812)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:932)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:815)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:932)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:815)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:932)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:815)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:932)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:815)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:932)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:815)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:932)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:815)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:932)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:815)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:932)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:815)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:932)
+	at org.eclipse.swt.widgets.Canvas.releaseChildren(Canvas.java:174)
+	at org.eclipse.swt.widgets.Decorations.releaseChildren(Decorations.java:731)
+	at org.eclipse.swt.widgets.Shell.releaseChildren(Shell.java:1343)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:815)
+	at org.eclipse.swt.widgets.Widget.dispose(Widget.java:429)
+	at org.eclipse.swt.widgets.Decorations.dispose(Decorations.java:408)
+	at org.eclipse.swt.widgets.Shell.dispose(Shell.java:732)
+	at org.eclipse.swt.widgets.Display.release(Display.java:3612)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:300)
+	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3143)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2304)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4867)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:348)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1502)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2162)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4792)
+	at org.eclipse.swt.internal.win32.OS.PeekMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.PeekMessage(OS.java:2793)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3556)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:821)
+	at org.eclipse.jface.window.Window.open(Window.java:797)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchWindowAdvisor.promptOnExit(IDEWorkbenchWindowAdvisor.java:227)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$1.handleEvent(IDEWorkbenchAdvisor.java:167)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4145)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4137)
+	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3156)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2304)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4867)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:348)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1502)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2162)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4792)
+	at org.eclipse.swt.internal.win32.OS.PeekMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.PeekMessage(OS.java:2793)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3556)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+!SESSION 2019-01-16 18:32:35.914 -----------------------------------------------
+eclipse.buildId=4.0.2.201811300843-RELEASE
+java.version=1.8.0_192
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-01-16 18:32:44.427
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2019-01-16 18:32:51.767
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-01-16 18:32:51.767
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@441aa7ae,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1534bdc6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:32:57.951
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:32:57.954
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@3e729d46[org.springframework.tooling.boot.ls:1.1.1.201811300741(id=533)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:32:57.955
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:32:58.035
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-01-16 18:32:59.472
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\wp040632'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.buildship.core 2 0 2019-01-16 18:33:00.042
+!MESSAGE Could not load Gradle version information
+!STACK 0
+org.gradle.api.UncheckedIOException: Cannot download published Gradle versions.
+	at com.gradleware.tooling.toolingutils.distribution.PublishedGradleVersions.downloadVersionInformation(PublishedGradleVersions.java:175)
+	at com.gradleware.tooling.toolingutils.distribution.PublishedGradleVersions.tryToDownloadAndCacheVersions(PublishedGradleVersions.java:159)
+	at com.gradleware.tooling.toolingutils.distribution.PublishedGradleVersions.create(PublishedGradleVersions.java:119)
+	at org.eclipse.buildship.core.util.gradle.PublishedGradleVersionsWrapper$LoadVersionsJob.run(PublishedGradleVersionsWrapper.java:66)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.ssl.Alerts.getSSLException(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.fatal(Unknown Source)
+	at sun.security.ssl.Handshaker.fatalSE(Unknown Source)
+	at sun.security.ssl.Handshaker.fatalSE(Unknown Source)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(Unknown Source)
+	at sun.security.ssl.ClientHandshaker.processMessage(Unknown Source)
+	at sun.security.ssl.Handshaker.processLoop(Unknown Source)
+	at sun.security.ssl.Handshaker.process_record(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.readRecord(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at sun.net.www.protocol.https.HttpsClient.afterConnect(Unknown Source)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at com.gradleware.tooling.toolingutils.distribution.PublishedGradleVersions.downloadVersionInformation(PublishedGradleVersions.java:172)
+	... 4 more
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(Unknown Source)
+	at sun.security.validator.PKIXValidator.engineValidate(Unknown Source)
+	at sun.security.validator.Validator.validate(Unknown Source)
+	at sun.security.ssl.X509TrustManagerImpl.validate(Unknown Source)
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(Unknown Source)
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(Unknown Source)
+	... 18 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(Unknown Source)
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(Unknown Source)
+	at java.security.cert.CertPathBuilder.build(Unknown Source)
+	... 24 more
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-01-16 18:33:08.324
+!MESSAGE LanguageServer not initialized after 10s
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.getServerCapabilities(LanguageServerWrapper.java:573)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:301)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSPDocumentInfosFor(LanguageServiceAccessor.java:444)
+	at org.eclipse.lsp4e.operations.color.DocumentColorProvider.lambda$0(DocumentColorProvider.java:53)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-01-16 18:33:08.359
+!MESSAGE LanguageServer not initialized after 10s
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.getServerCapabilities(LanguageServerWrapper.java:573)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.lambda$8(LanguageServiceAccessor.java:372)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.HashMap$KeySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.collect(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getMatchingStartedWrappers(LanguageServiceAccessor.java:374)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:284)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSPDocumentInfosFor(LanguageServiceAccessor.java:444)
+	at org.eclipse.lsp4e.operations.folding.LSPFoldingReconcilingStrategy.reconcile(LSPFoldingReconcilingStrategy.java:123)
+	at org.eclipse.lsp4e.operations.folding.LSPFoldingReconcilingStrategy.initialReconcile(LSPFoldingReconcilingStrategy.java:336)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.initialProcess(MonoReconciler.java:98)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:177)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.009
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.ADZdXeUZ
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.010
+!MESSAGE subscribing to classpath changes: sts4.classpath.ADZdXeUZ
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.019
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.020
+!MESSAGE subsribers = [sts4.classpath.ADZdXeUZ]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.020
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.023
+!MESSAGE project ifast-cfg-adapter-app ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.024
+!MESSAGE project ics-adapter-integration-client ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.024
+!MESSAGE project ics-adapter-integration-abl ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.025
+!MESSAGE Preparing classpath changed notification ifast-cfg-adapter-app
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.025
+!MESSAGE project ifast-cfg-adapter-dc ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.026
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.028
+!MESSAGE project ifast-cfg-adapter-discovery ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.028
+!MESSAGE project ifast-cfg-adapter-discovery-mockserver ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.029
+!MESSAGE project ifast-cfg-adapter-integration-tests ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.029
+!MESSAGE project ifast-cfg-adapter-model ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.030
+!MESSAGE project ifast-cfg-adapter-rest ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.030
+!MESSAGE project ifast-cfg-adapter-services ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.031
+!MESSAGE project ifast-config-adapter ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.031
+!MESSAGE project ifast-config-adapter SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.031
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.032
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.ADZdXeUZ => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.035
+!MESSAGE project entry /ifast-cfg-adapter-model
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.037
+!MESSAGE project entry /ics-adapter-integration-client
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.037
+!MESSAGE project entry /ics-adapter-integration-abl
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.039
+!MESSAGE project entry /ifast-cfg-adapter-rest
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.042
+!MESSAGE project entry /ifast-cfg-adapter-services
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.042
+!MESSAGE project entry /ifast-cfg-adapter-discovery
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.072
+!MESSAGE classpath=142 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.072
+!MESSAGE executing callback sts4.classpath.ADZdXeUZ ifast-cfg-adapter-app false 142
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.261
+!MESSAGE executing callback sts4.classpath.ADZdXeUZ SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.262
+!MESSAGE Preparing classpath changed notification ifast-cfg-adapter-services
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.262
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.264
+!MESSAGE project entry /ifast-cfg-adapter-model
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.265
+!MESSAGE project entry /ics-adapter-integration-client
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.266
+!MESSAGE project entry /ics-adapter-integration-abl
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.267
+!MESSAGE project entry /ifast-cfg-adapter-discovery
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.275
+!MESSAGE classpath=116 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.276
+!MESSAGE executing callback sts4.classpath.ADZdXeUZ ifast-cfg-adapter-services false 116
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.297
+!MESSAGE executing callback sts4.classpath.ADZdXeUZ SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.298
+!MESSAGE Preparing classpath changed notification ifast-cfg-adapter-rest
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.299
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.304
+!MESSAGE project entry /ifast-cfg-adapter-services
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.305
+!MESSAGE project entry /ifast-cfg-adapter-model
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.306
+!MESSAGE project entry /ics-adapter-integration-client
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.306
+!MESSAGE project entry /ics-adapter-integration-abl
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.307
+!MESSAGE project entry /ifast-cfg-adapter-discovery
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.320
+!MESSAGE classpath=122 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.320
+!MESSAGE executing callback sts4.classpath.ADZdXeUZ ifast-cfg-adapter-rest false 122
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.344
+!MESSAGE executing callback sts4.classpath.ADZdXeUZ SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.344
+!MESSAGE Preparing classpath changed notification ifast-cfg-adapter-model
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.345
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.348
+!MESSAGE classpath=26 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.348
+!MESSAGE executing callback sts4.classpath.ADZdXeUZ ifast-cfg-adapter-model false 26
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.355
+!MESSAGE executing callback sts4.classpath.ADZdXeUZ SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.355
+!MESSAGE Preparing classpath changed notification ifast-cfg-adapter-integration-tests
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.356
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.361
+!MESSAGE project entry /ics-adapter-integration-client
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.361
+!MESSAGE project entry /ifast-cfg-adapter-model
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.362
+!MESSAGE project entry /ics-adapter-integration-abl
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.363
+!MESSAGE project entry /ifast-cfg-adapter-services
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.363
+!MESSAGE project entry /ifast-cfg-adapter-discovery
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.370
+!MESSAGE project entry /ifast-cfg-adapter-discovery-mockserver
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.371
+!MESSAGE classpath=118 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.371
+!MESSAGE executing callback sts4.classpath.ADZdXeUZ ifast-cfg-adapter-integration-tests false 118
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.393
+!MESSAGE executing callback sts4.classpath.ADZdXeUZ SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.394
+!MESSAGE Preparing classpath changed notification ifast-cfg-adapter-discovery-mockserver
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.395
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.401
+!MESSAGE classpath=57 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.401
+!MESSAGE executing callback sts4.classpath.ADZdXeUZ ifast-cfg-adapter-discovery-mockserver false 57
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.417
+!MESSAGE executing callback sts4.classpath.ADZdXeUZ SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.417
+!MESSAGE Preparing classpath changed notification ifast-cfg-adapter-discovery
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.418
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.425
+!MESSAGE project entry /ics-adapter-integration-client
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.426
+!MESSAGE project entry /ifast-cfg-adapter-model
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.427
+!MESSAGE project entry /ics-adapter-integration-abl
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.433
+!MESSAGE classpath=75 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.434
+!MESSAGE executing callback sts4.classpath.ADZdXeUZ ifast-cfg-adapter-discovery false 75
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.449
+!MESSAGE executing callback sts4.classpath.ADZdXeUZ SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.466
+!MESSAGE Preparing classpath changed notification ifast-cfg-adapter-dc
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.467
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.469
+!MESSAGE classpath=23 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.470
+!MESSAGE executing callback sts4.classpath.ADZdXeUZ ifast-cfg-adapter-dc false 23
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.493
+!MESSAGE executing callback sts4.classpath.ADZdXeUZ SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.497
+!MESSAGE Preparing classpath changed notification ics-adapter-integration-client
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.501
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.503
+!MESSAGE project entry /ifast-cfg-adapter-model
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.504
+!MESSAGE project entry /ics-adapter-integration-abl
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.506
+!MESSAGE classpath=60 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.507
+!MESSAGE executing callback sts4.classpath.ADZdXeUZ ics-adapter-integration-client false 60
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.516
+!MESSAGE executing callback sts4.classpath.ADZdXeUZ SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.517
+!MESSAGE Preparing classpath changed notification ics-adapter-integration-abl
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.517
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.611
+!MESSAGE classpath=40 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.612
+!MESSAGE executing callback sts4.classpath.ADZdXeUZ ics-adapter-integration-abl false 40
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:33:11.617
+!MESSAGE executing callback sts4.classpath.ADZdXeUZ SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:34:58.414
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.ADZdXeUZ
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:34:58.414
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.ADZdXeUZ
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:34:58.415
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-16 18:34:58.415
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.ADZdXeUZ => OK
