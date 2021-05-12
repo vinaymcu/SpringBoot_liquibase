@@ -65,8 +65,7 @@ public class ArticleController {
 	@Autowired
 	private PersonRepository repository;
 
-	// using jpa repository
-	//@ModifyFundConfig
+	
 	@PostMapping("save")
 	@ResponseBody
 	public ResponseEntity<AppResponse> saveArticle(@RequestBody ArticleModel article) {
@@ -89,7 +88,7 @@ public class ArticleController {
 
 	}
 	
-	//@ModifyFundConfig(ignoreLockedFundConfig=true)
+	
 	@PostMapping("save1")
 	@ResponseBody
 	public ResponseEntity<AppResponse> saveArticle1(@RequestBody ArticleModel article) {
