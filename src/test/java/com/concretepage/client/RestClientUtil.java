@@ -13,7 +13,7 @@ import com.concretepage.entity.Article;
 
 public class RestClientUtil {
     public void getArticleByIdDemo() {
-    	HttpHeaders headers = new HttpHeaders();
+    	HttpHeaders headers = new HttpHeaders(11111);
     	headers.setContentType(MediaType.APPLICATION_JSON);
         RestTemplate restTemplate = new RestTemplate();
 	    String url = "http://localhost:8080/user/article/{id}";
