@@ -49,4 +49,7 @@ public class Article implements Serializable {
     public void setCategory(String category) {
         this.category = category;
     }
+    public String getDetails(){
+      return "Hello";   
+    }
 }
